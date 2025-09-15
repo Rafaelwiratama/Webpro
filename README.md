@@ -1,6 +1,79 @@
 - SOURCECODE 
 
-HTML :
+- HTML :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeeksforGeeks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-CSS :
+  <!-- Header -->
+  <header>
+    <h1>GeeksforGeeks</h1>
+    <p>A Computer Science Portal for Geeks</p>
+  </header>
+
+  <hr>
+
+  <!-- Portfolio / Courses -->
+  <section class="courses">
+    <h2>Portfolio</h2>
+    <div class="course-container">
+
+      <!-- HTML -->
+      <div class="card">
+        <div class="card-banner html-banner">HTML</div>
+        <div class="card-body">
+          <h3>HTML Tutorials</h3>
+          <p>
+            HTML stands for Hyper Text Markup Language. It is used to design web pages using markup language. 
+            HTML is the combination of Hypertext and Markup...
+          </p>
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div class="card">
+        <div class="card-banner css-banner">CSS</div>
+        <div class="card-body">
+          <h3>CSS Tutorials</h3>
+          <p>
+            Cascading Style Sheets, fondly referred to as CSS, is a designed language intended to simplify the process of making web pages presentable...
+          </p>
+        </div>
+      </div>
+
+      <!-- PHP -->
+      <div class="card">
+        <div class="card-banner php-banner">PHP</div>
+        <div class="card-body">
+          <h3>PHP Tutorials</h3>
+          <p>
+            The term PHP is an acronym for PHP: Hypertext Preprocessor. PHP is a widely-used open-source scripting language especially suited for web development...
+          </p>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="card">
+        <div class="card-banner js-banner">JAVASCRIPT</div>
+        <div class="card-body">
+          <h3>JavaScript Tutorials</h3>
+          <p>
+            JavaScript was developed by Brendan Eich in 1995. It was initially called LiveScript but was later renamed to JavaScript. JavaScript is the essence of...
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
+
+- CSS :
 

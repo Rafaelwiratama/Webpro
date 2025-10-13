@@ -1,1 +1,52 @@
+:root{
+  --primary:#ff9800;
+  --dark:#222;
+  --muted:#f5f5f5;
+  --container:1100px;
+  --gap:18px;
+  --radius:8px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:#222;background:#fff;
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--container);margin:0 auto;padding:24px;}
+.nav{background:var(--dark);color:#fff}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;}
+.brand{color:#fff;text-decoration:none;font-weight:700}
+.nav-links{list-style:none;display:flex;gap:12px}
+.nav-links a{color:#ddd;text-decoration:none;padding:6px 10px;border-radius:6px}
+.nav-links a:hover{background:rgba(255,255,255,0.05);color:#fff}
 
+.hero{height:65vh;background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('images/hero-toy.jpg') center/cover no-repeat;display:flex;align-items:center}
+.hero-content{color:#fff;padding:32px}
+.hero h1{font-size:2.6rem;margin:0 0 12px}
+.lead{font-size:1.1rem;margin-bottom:16px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600}
+.btn.primary{background:var(--primary);color:#000}
+.btn.outline{border:2px solid #fff;color:#fff;background:transparent}
+.btn.primary:hover{filter:brightness(0.95)}
+
+.main{padding:30px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:var(--muted);padding:18px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.04)}
+
+.social-proof, .quick-benefits, .offer{margin:30px 0}
+.reviews blockquote{background:#fff;padding:14px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.04);margin:12px 0}
+
+.form-section, .faq-list{margin:24px 0}
+form{display:flex;flex-direction:column;gap:10px;background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.04)}
+input,select,textarea{padding:10px;border-radius:8px;border:1px solid #ddd;font-size:1rem}
+table{width:100%;border-collapse:collapse;margin-top:12px}
+th,td{border:1px solid #eee;padding:10px;text-align:left}
+.note{font-size:0.9rem;color:#666;margin-top:12px}
+
+.footer{background:var(--dark);color:#fff;padding:20px;text-align:center;margin-top:28px}
+
+/* responsive */
+@media(max-width:720px){
+  .nav-inner{flex-direction:column;gap:12px}
+  .hero{height:48vh}
+  .hero h1{font-size:1.6rem}
+}

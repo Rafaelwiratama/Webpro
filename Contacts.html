@@ -13,11 +13,11 @@
   <section class="form-section">
 <form id="visitorForm">
   <label for="nama">Name:</label>
-    <input type="text" id="nama" name="name" required>
+    <input type="text" id="nama" name="nama" required>
   <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
   <label for="pesan">Order:</label>
-    <textarea id="pesan" name="order"></textarea>
+    <textarea id="pesan" name="pesan"></textarea>
   <button type="submit">Send</button>
     </form>
     <h3>Customer List</h3>
@@ -34,9 +34,9 @@
   <script>
     document.getElementById("visitorForm").addEventListener("submit", function(e) {
       e.preventDefault();
-      const name = document.getElementById("name").value;
+      const name = document.getElementById("nama").value;
       const email = document.getElementById("email").value;
-      const order = document.getElementById("order").value;
+      const order = document.getElementById("pesan").value;
       const table = document.getElementById("visitorTable").querySelector("tbody");
       const newRow = table.insertRow();
       newRow.insertCell(0).innerText = name;
